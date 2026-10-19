@@ -1,0 +1,167 @@
+# Pokémon name  →  TCG energy type  (10 classes)
+POKEMON_TYPE_MAP = {
+    # ── FIRE ──────────────────────────────────────────────────────────────
+    'charmander':'fire','charmeleon':'fire','charizard':'fire','vulpix':'fire','ninetales':'fire',
+    'growlithe':'fire','arcanine':'fire','magmar':'fire','flareon':'fire','moltres':'fire',
+    'cyndaquil':'fire','quilava':'fire','typhlosion':'fire','entei':'fire','houndour':'fire',
+    'houndoom':'fire','magby':'fire','torkoal':'fire','numel':'fire','camerupt':'fire',
+    'magmortar':'fire','heatran':'fire','victini':'fire','tepig':'fire','pignite':'fire',
+    'emboar':'fire','pansear':'fire','simisear':'fire','darumaka':'fire','darmanitan':'fire',
+    'reshiram':'fire','volcarona':'fire','litwick':'fire','lampent':'fire','chandelure':'fire',
+    'heatmor':'fire','salandit':'fire','salazzle':'fire','sizzlipede':'fire','centiskorch':'fire',
+    'victini-v':'fire','emboar-v':'fire',
+
+    # ── WATER ─────────────────────────────────────────────────────────────
+    'squirtle':'water','wartortle':'water','blastoise':'water','psyduck':'water','golduck':'water',
+    'poliwag':'water','poliwhirl':'water','poliwrath':'water','tentacool':'water','tentacruel':'water',
+    'seel':'water','dewgong':'water','shellder':'water','cloyster':'water','krabby':'water',
+    'kingler':'water','horsea':'water','seadra':'water','goldeen':'water','seaking':'water',
+    'staryu':'water','starmie':'water','lapras':'water','vaporeon':'water','omanyte':'water',
+    'omastar':'water','kabuto':'water','kabutops':'water','totodile':'water','croconaw':'water',
+    'feraligatr':'water','marill':'water','azumarill':'water','wooper':'water','quagsire':'water',
+    'slowking':'water','qwilfish':'water','corsola':'water','remoraid':'water','octillery':'water',
+    'mantine':'water','kingdra':'water','suicune':'water','mudkip':'water','marshtomp':'water',
+    'swampert':'water','lotad':'water','lombre':'water','ludicolo':'water','wingull':'water',
+    'pelipper':'water','surskit':'water','masquerain':'water','wailmer':'water','wailord':'water',
+    'corphish':'water','crawdaunt':'water','barboach':'water','whiscash':'water','clamperl':'water',
+    'huntail':'water','gorebyss':'water','relicanth':'water','luvdisc':'water','kyogre':'water',
+    'piplup':'water','prinplup':'water','empoleon':'water','buizel':'water','floatzel':'water',
+    'shellos':'water','gastrodon':'water','finneon':'water','lumineon':'water','mantyke':'water',
+    'phione':'water','manaphy':'water','oshawott':'water','dewott':'water','samurott':'water',
+    'panpour':'water','simipour':'water','basculin':'water','ducklett':'water','swanna':'water',
+    'frillish':'water','jellicent':'water','alomomola':'water','keldeo':'water','froakie':'water',
+    'frogadier':'water','greninja':'water','clauncher':'water','clawitzer':'water','swinub':'water',
+    'piloswine':'water','mamoswine':'water','bergmite':'water','avalugg':'water','mantine':'water',
+    'slowpoke':'water','slowbro':'water','starmie-v':'water','keldeo-ex':'water',
+
+    # ── GRASS ─────────────────────────────────────────────────────────────
+    'bulbasaur':'grass','ivysaur':'grass','venusaur':'grass','caterpie':'grass','metapod':'grass',
+    'butterfree':'grass','oddish':'grass','gloom':'grass','vileplume':'grass','paras':'grass',
+    'parasect':'grass','bellsprout':'grass','weepinbell':'grass','victreebel':'grass',
+    'exeggcute':'grass','exeggutor':'grass','tangela':'grass','scyther':'grass','pinsir':'grass',
+    'leafeon':'grass','chikorita':'grass','bayleef':'grass','meganium':'grass','bellossom':'grass',
+    'hoppip':'grass','skiploom':'grass','jumpluff':'grass','sunkern':'grass','sunflora':'grass',
+    'yanma':'grass','celebi':'grass','treecko':'grass','grovyle':'grass','sceptile':'grass',
+    'seedot':'grass','nuzleaf':'grass','shiftry':'grass','shroomish':'grass','breloom':'grass',
+    'tropius':'grass','roselia':'grass','turtwig':'grass','grotle':'grass','torterra':'grass',
+    'budew':'grass','roserade':'grass','cherubi':'grass','cherrim':'grass','carnivine':'grass',
+    'shaymin':'grass','snivy':'grass','servine':'grass','serperior':'grass','pansage':'grass',
+    'simisage':'grass','petilil':'grass','lilligant':'grass','maractus':'grass','deerling':'grass',
+    'sawsbuck':'grass','foongus':'grass','amoonguss':'grass','ferroseed':'grass','virizion':'grass',
+    'cottonee':'grass','whimsicott':'grass','cacnea':'grass','cacturne':'grass','fomantis':'grass',
+    'lurantis':'grass','blipbug':'grass','scatterbug':'grass','spewpa':'grass','vivillon':'grass',
+    'rowlet':'grass','dartrix':'grass','tangrowth':'grass','heracross':'grass','beedrill':'grass',
+    'kricketot':'grass','kricketune':'grass','combee':'grass','vespiquen':'grass',
+
+    # ── LIGHTNING ─────────────────────────────────────────────────────────
+    'pikachu':'lightning','raichu':'lightning','magnemite':'lightning','magneton':'lightning',
+    'voltorb':'lightning','electrode':'lightning','electabuzz':'lightning','jolteon':'lightning',
+    'zapdos':'lightning','chinchou':'lightning','lanturn':'lightning','pichu':'lightning',
+    'elekid':'lightning','raikou':'lightning','ampharos':'lightning','flaaffy':'lightning',
+    'mareep':'lightning','electrike':'lightning','manectric':'lightning','plusle':'lightning',
+    'minun':'lightning','shinx':'lightning','luxio':'lightning','luxray':'lightning',
+    'pachirisu':'lightning','magnezone':'lightning','electivire':'lightning','rotom':'lightning',
+    'joltik':'lightning','galvantula':'lightning','blitzle':'lightning','zebstrika':'lightning',
+    'emolga':'lightning','stunfisk':'lightning','thundurus':'lightning','zekrom':'lightning',
+    'klink':'lightning','klang':'lightning','klinklang':'lightning','tynamo':'lightning',
+    'eelektrik':'lightning','eelektross':'lightning','dedenne':'lightning','heliolisk':'lightning',
+
+    # ── PSYCHIC ───────────────────────────────────────────────────────────
+    'abra':'psychic','kadabra':'psychic','alakazam':'psychic','gastly':'psychic','haunter':'psychic',
+    'gengar':'psychic','drowzee':'psychic','hypno':'psychic','mr-mime':'psychic','jynx':'psychic',
+    'mewtwo':'psychic','mew':'psychic','slowking':'psychic','misdreavus':'psychic','unown':'psychic',
+    'wobbuffet':'psychic','girafarig':'psychic','murkrow':'psychic','jirachi':'psychic',
+    'deoxys':'psychic','ralts':'psychic','kirlia':'psychic','gardevoir':'psychic','spoink':'psychic',
+    'grumpig':'psychic','lunatone':'psychic','solrock':'psychic','baltoy':'psychic','claydol':'psychic',
+    'shuppet':'psychic','banette':'psychic','duskull':'psychic','dusclops':'psychic','dusknoir':'psychic',
+    'chimecho':'psychic','snorunt':'psychic','glalie':'psychic','froslass':'psychic',
+    'latias':'psychic','latios':'psychic','uxie':'psychic','mesprit':'psychic','azelf':'psychic',
+    'cresselia':'psychic','giratina':'psychic','munna':'psychic','musharna':'psychic',
+    'woobat':'psychic','swoobat':'psychic','solosis':'psychic','duosion':'psychic','reuniclus':'psychic',
+    'gothita':'psychic','gothorita':'psychic','elgyem':'psychic','beheeyem':'psychic',
+    'drifblim':'psychic','drifloon':'psychic','meloetta':'psychic','togepi':'psychic',
+    'togetic':'psychic','togekiss':'psychic','diancie':'psychic','mismagius':'psychic',
+    'gallade':'psychic','sylveon':'psychic','hoopa':'psychic','lugia':'psychic',
+    'espeon':'psychic','umbreon':'psychic','mimikyu':'psychic','jigglypuff':'psychic',
+
+    # ── FIGHTING ──────────────────────────────────────────────────────────
+    'mankey':'fighting','primeape':'fighting','poliwrath':'fighting','machop':'fighting',
+    'machoke':'fighting','machamp':'fighting','geodude':'fighting','graveler':'fighting',
+    'golem':'fighting','onix':'fighting','hitmonlee':'fighting','hitmonchan':'fighting',
+    'rhyhorn':'fighting','rhydon':'fighting','kangaskhan':'fighting','cubone':'fighting',
+    'marowak':'fighting','tyrogue':'fighting','hitmontop':'fighting','sudowoodo':'fighting',
+    'phanpy':'fighting','donphan':'fighting','makuhita':'fighting','hariyama':'fighting',
+    'aron':'fighting','lairon':'fighting','aggron':'fighting','meditite':'fighting',
+    'medicham':'fighting','riolu':'fighting','lucario':'fighting','cranidos':'fighting',
+    'rampardos':'fighting','shieldon':'fighting','bastiodon':'fighting','hippopotas':'fighting',
+    'hippowdon':'fighting','rhyperior':'fighting','dwebble':'fighting','crustle':'fighting',
+    'timburr':'fighting','gurdurr':'fighting','conkeldurr':'fighting','throh':'fighting',
+    'sawk':'fighting','sandile':'fighting','krokorok':'fighting','krookodile':'fighting',
+    'mienfoo':'fighting','mienshao':'fighting','landorus':'fighting','terrakion':'fighting',
+    'cobalion':'fighting','hawlucha':'fighting','trapinch':'fighting',
+
+    # ── DARKNESS ──────────────────────────────────────────────────────────
+    'murkrow':'darkness','sneasel':'darkness','weavile':'darkness','houndour':'darkness',
+    'houndoom':'darkness','tyranitar':'darkness','poochyena':'darkness','mightyena':'darkness',
+    'carvanha':'darkness','sharpedo':'darkness','purrloin':'darkness','liepard':'darkness',
+    'vullaby':'darkness','mandibuzz':'darkness','zorua':'darkness','zoroark':'darkness',
+    'nickit':'darkness','thievul':'darkness','pawniard':'darkness','bisharp':'darkness',
+    'darkrai':'darkness','yveltal':'darkness','greninja':'darkness','drapion':'darkness',
+    'toxicroak':'darkness','spiritomb':'darkness','pangoro':'darkness','guzzlord':'darkness',
+    'incineroar':'darkness','absol':'darkness','sableye':'darkness',
+
+    # ── METAL ─────────────────────────────────────────────────────────────
+    'steelix':'metal','scizor':'metal','skarmory':'metal','beldum':'metal','metang':'metal',
+    'metagross':'metal','registeel':'metal','bronzor':'metal','bronzong':'metal',
+    'ferrothorn':'metal','kleavor':'metal','dialga':'metal','aegislash':'metal',
+    'durant':'metal','klefki':'metal','magearna':'metal','meltan':'metal','melmetal':'metal',
+    'corviknight':'metal','copperajah':'metal','zamazenta':'metal','zacian':'metal',
+
+    # ── DRAGON ────────────────────────────────────────────────────────────
+    'dratini':'dragon','dragonair':'dragon','dragonite':'dragon','kingdra':'dragon',
+    'vibrava':'dragon','flygon':'dragon','altaria':'dragon','bagon':'dragon','shelgon':'dragon',
+    'salamence':'dragon','rayquaza':'dragon','gible':'dragon','gabite':'dragon','garchomp':'dragon',
+    'axew':'dragon','fraxure':'dragon','haxorus':'dragon','druddigon':'dragon','deino':'dragon',
+    'zweilous':'dragon','hydreigon':'dragon','kyurem':'dragon','dragalge':'dragon',
+    'goodra':'dragon','noibat':'dragon','noivern':'dragon','regidrago':'dragon',
+
+    # ── COLORLESS ─────────────────────────────────────────────────────────
+    'pidgey':'colorless','pidgeotto':'colorless','pidgeot':'colorless','spearow':'colorless',
+    'fearow':'colorless','jigglypuff':'colorless','wigglytuff':'colorless','farfetch':'colorless',
+    'doduo':'colorless','dodrio':'colorless','lickitung':'colorless','chansey':'colorless',
+    'blissey':'colorless','tauros':'colorless','eevee':'colorless','porygon':'colorless',
+    'snorlax':'colorless','ditto':'colorless','miltank':'colorless','togapi':'colorless',
+    'aipom':'colorless','dunsparce':'colorless','teddiursa':'colorless','ursaring':'colorless',
+    'smeargle':'colorless','munchlax':'colorless','stantler':'colorless','bidoof':'colorless',
+    'bibarel':'colorless','chatot':'colorless','lopunny':'colorless','buneary':'colorless',
+    'spinda':'colorless','bouffalant':'colorless','audino':'colorless','minccino':'colorless',
+    'cinccino':'colorless','patrat':'colorless','watchog':'colorless','lillipup':'colorless',
+    'herdier':'colorless','stoutland':'colorless','pidove':'colorless','tranquill':'colorless',
+    'unfezant':'colorless','rufflet':'colorless','braviary':'colorless','skitty':'colorless',
+    'delcatty':'colorless','taillow':'colorless','glameow':'colorless','purugly':'colorless',
+    'hoothoot':'colorless','noctowl':'colorless','rattata':'colorless','raticate':'colorless',
+    'regigigas':'colorless','wyrdeer':'colorless','oranguru':'colorless','meowth':'colorless',
+    'persian':'colorless','togepi':'colorless',
+}
+
+# Non-Pokémon keywords → exclude from dataset
+EXCLUDE_KEYWORDS = [
+    'energy','trainer','stadium','ball','potion','professor','professor-',
+    'revive','switch','defender','bill','retrieval','recycler','search',
+    'department','scope','lure','communication','colony','door','shield',
+    'fossil','lotto','mail','cologne','patch','helmet','feather','temple',
+    'village','gym','resort','beach','victory','battle-city','town-map',
+    'tropical','crystal-edge','crystal-wall','gold-potion','path-to-peak',
+    'aspertia','jubilife','spicy','sweet','trekking','wait-and-see','gutsy',
+    'choice-belt','gapejaw','collapsed','bursting','ace-trainer','full-heal',
+    'pluspower','super-scoop','super-rod','item-finder','devolution','clefairy-doll',
+    'energy-removal','energy-switch','bench-bench','bench-shield',
+]
+
+CLASS_NAMES = ['colorless','darkness','dragon','fighting','fire','grass','lightning','metal','psychic','water'
+]
+CLASS_COLORS = {
+    'fire':'#E25822','water':'#3B9AD9','grass':'#5DB554','lightning':'#F7D02C',
+    'psychic':'#9E61B5','fighting':'#BE5B1A','darkness':'#3D3D3D','metal':'#8A8A8A',
+    'dragon':'#6F35FC','colorless':'#A8A77A'
+}
